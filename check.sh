@@ -1,4 +1,4 @@
-echo -e "\ngroup :test do\ngem 'rspec-rails', '~> 3.6.0'\ngem 'factory_bot_rails'\ngem 'rspec-parameterized'\ngem 'faker' #ランダム値の生成\ngem 'shoulda-matchers'\ngem 'rails-controller-testing'\nend" >> Gemfile
+echo -e "\group :test do\gem 'rspec-rails', '~> 3.6.0'\gem 'factory_bot_rails'\gem 'rspec-parameterized'\gem 'faker' #ランダム値の生成\gem 'shoulda-matchers'\gem 'rails-controller-testing'\end" >> Gemfile
 cp -r ../../RspecBookers2Debug/spec/ ./
 bundle install
 bundle exec rspec spec/ --format documentation 
