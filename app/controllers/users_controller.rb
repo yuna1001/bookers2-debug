@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-	before_action :baria_user, only: [:update]
+	before_action :authenticate_user!
 
   def show
   	@user = User.find(params[:id])
